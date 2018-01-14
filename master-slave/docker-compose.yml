@@ -1,4 +1,4 @@
-version: '2'
+version: '2.1'
 
 services:
   # Jenkins Master
@@ -32,9 +32,9 @@ services:
 
 volumes:
   jenkinsdata:
-    external: false
+    external: true
   jenkinslogs:
-    external: false
+    external: true
 
 networks:
   jenkinsnet:
