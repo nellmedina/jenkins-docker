@@ -22,6 +22,7 @@ services:
   # Jenkins Slave
   slave:
     image: blacklabelops/swarm-jdk8
+    container_name: jenkins_slave_1
     networks:
       - jenkinsnet
     env_file:
